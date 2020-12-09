@@ -341,14 +341,20 @@
           </div>
         </div>
         <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
-          <form class="form" form action="/" method = "GET">
+          <form class="form" id="gform" name="gform" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSdFB6Trj8CcWKhL-mjYsfGeSK39oUnZsN1OGHvU6Cf47XKULg/formResponse?">
             <h2>Message me</h2>
             <div>
-              <input type="text" required placeholder="Name" />
-              <input type="email" required  placeholder="Email" />
+
+              
+              <input for="entry.541912437" type="text" required name="entry.541912437" id="entry.541912437" placeholder="Name" />
+
+              <input for="entry.1371870212" type="email" required name="entry.1371870212" id="entry.1371870212"  placeholder="Email" />
+
             </div>
-            <input type="text" placeholder="Subject" required/>
-            <textarea
+
+            <input for="entry.633773499" type="text" name="entry.633773499" id="entry.633773499" required  placeholder="Subject" />
+
+            <textarea for="entry.1594693576" name="entry.1594693576" id="entry.1594693576"
               cols="10"
               rows="10"
               placeholder="Describe Project" required
@@ -356,6 +362,21 @@
 
             <button type="submit">Send message</button>
           </form>
+
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
+	        <script src="http://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+	        <script type="text/javascript">
+		          var submitted = false;
+	        </script>
+          <script type="text/javascript">
+          var img = './images/thankyou.png';
+		          $('#gform').on('submit', function(e){
+			            $('#gform *').fadeOut(2000);
+			            $('#gform').html(`<img src='${img}'>`);
+		          })
+	        </script>
+
+
         </div>
       </div>
     </section>
