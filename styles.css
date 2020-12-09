@@ -386,7 +386,8 @@ li {
   color: #dd9a05;
 }
 
-a.btn {
+
+a.btn,button[type=submit] {
   display: inline-block;
   padding: 1rem 2rem;
   background: #dd9a05;
@@ -397,13 +398,13 @@ a.btn {
   transition: all 300ms ease-in-out;
 }
 
-a.btn:hover {
+a.btn:hover,button[type=submit]:hover {
   transform: translateY(-3px);
   background-color: transparent;
   color: inherit;
 }
 
-a.btn:active {
+a.btn:active,button[type=submit]:active {
   transform: translateY(0px);
 }
 
@@ -704,5 +705,7 @@ footer p {
 footer p span {
   color: #dd9a05;
 }
+
+
 
 /* testing git  */
