@@ -360,8 +360,9 @@
               placeholder="Describe Project" required
             ></textarea>
 
-            <button type="submit">Send message</button>
+            <button id="submitbtn" type="submit">Send message</button>
           </form>
+          
 
           <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
 	        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
@@ -371,10 +372,19 @@
           <script type="text/javascript">
           var img = './images/thankyou1.PNG';
 		          $('#gform').on('submit', function(e){
-			            $('#gform *').fadeOut(2000);
-			            $('#gform').append(`<img src='${img}'>`);
+			            $('#gform *').hide();
+                  $('#gform').prepend(`<img src='${img}'>`);
+          
+          
+                	
+                 
 		          })
-	        </script>
+         
+        
+         </script>
+
+         
+
 
 
         </div>
