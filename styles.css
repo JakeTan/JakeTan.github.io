@@ -408,6 +408,18 @@ a.btn:active,button[type=submit]:active {
   transform: translateY(0px);
 }
 
+.no-arrow {
+  -moz-appearance: textfield;
+}
+.no-arrow::-webkit-inner-spin-button {
+  display: none;
+}
+.no-arrow::-webkit-outer-spin-button,
+.no-arrow::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 @media only screen and (max-width: 996px) {
   .right h1 {
     font-size: 2rem;
