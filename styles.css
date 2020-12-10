@@ -479,6 +479,10 @@ a.btn:active,button[type=submit]:active {
   transition: all 300ms ease-in-out;
 }
 
+.service img {
+  width: 100px;
+  height: auto;
+}
 .service span {
   color: #dd9a05;
   font-size: 4rem;
@@ -529,23 +533,23 @@ a.btn:active,button[type=submit]:active {
 }
 
 .skills-box .html {
-  width: 95%;
+  width: 75%;
 }
 
 .skills-box .css {
-  width: 85%;
+  width: 65%;
 }
 
 .skills-box .javascript {
-  width: 90%;
+  width: 50%;
 }
 
-.skills-box .nodejs {
-  width: 80%;
+.skills-box .react {
+  width: 10%;
 }
 
-.skills-box .mongodb {
-  width: 95%;
+.skills-box .firebase {
+  width: 5%;
 }
 
 .skills-box span {
@@ -719,5 +723,11 @@ footer p span {
 }
 
 
+/* BLOG */
+.blog-post img {
+  width: 300px;
+  height: auto;
+  padding: 30px;
+}
 
 /* testing git  */
