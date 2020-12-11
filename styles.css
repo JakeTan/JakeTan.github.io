@@ -69,6 +69,14 @@ li {
   z-index: -1;
 }
 
+/* BLOG Header */
+.blog-header {
+  position: relative;
+  width: 100%;
+  background: #000;
+  z-index: 1;
+}
+
 @media only screen and (max-width: 996px) {
   .header {
     min-height: 60vh;
